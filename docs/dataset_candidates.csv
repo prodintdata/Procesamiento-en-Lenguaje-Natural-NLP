@@ -1,3 +1,3 @@
 name,url,license,language,rows,target,decision
-Candidate_A,,,,,,pending
-Candidate_B,,,,,,pending
+"Drug Review Dataset (UCI/Kaggle)","https://www.kaggle.com/datasets/jessicali9530/kuc-hackathon-winter-2018/data","Open Data Commons / CC",English,215000,"rating / condition","approved"
+"Consumer Reviews of Amazon Products","https://www.kaggle.com/datasets/datafiniti/consumer-reviews-of-amazon-products","Public Domain",English,34000,"reviews.rating","rejected"
