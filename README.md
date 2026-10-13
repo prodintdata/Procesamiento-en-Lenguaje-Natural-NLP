@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # INF-8239 · Unidad 02 · Proyecto NLP
 
 Autor académico: Edwin Ramón José Nolasco
@@ -30,3 +31,6 @@ uv run streamlit run app/streamlit_app.py
 ## Interpretación
 
 Toda conclusión debe separar observación, evidencia, interpretación y decisión.
+=======
+# Procesamiento-en-Lenguaje-Natural-NLP
+>>>>>>> 28c3a1dce771fee4acd18c854a23abc6d011ebf3
