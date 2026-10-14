@@ -16,6 +16,8 @@ from inf8239_u02.modeling import build_models
 def main() -> None:
     df = load_dataset().dropna(subset=[settings.text_column, settings.target_column])
     df = df.drop_duplicates(subset=[settings.text_column])
+    # El codigo siguiente se agrego para evitar problema de RAM en codespaces (Codigo de salida 143)
+    df = df.sample(n=45000, random_state=settings.random_state)
     validate_dataframe(df, settings.text_column, settings.target_column)
     counts = df[settings.target_column].value_counts()
     stratify = df[settings.target_column] if counts.min() >= 2 else None
