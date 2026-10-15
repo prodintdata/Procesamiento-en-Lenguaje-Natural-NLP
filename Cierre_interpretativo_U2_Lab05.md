@@ -1,0 +1,9 @@
+# Cierre Interpretativo (Lab 05)
+
+- **Resultado principal:** El modelo de Regresión Logística con representaciones TF-IDF logra capturar las tendencias generales del corpus, pero exhibe un sesgo crítico de polarización léxica y ceguera semántica ante el contexto clínico real.
+- **Modelo seleccionado y evidencia:** Regresión Logística combinada con vectorización TF-IDF (artefacto guardado en `models/text_model.joblib`), validado mediante matrices de confusión, métricas de desempeño y análisis de 20 casos de error detallados en `reports/error_analysis.csv`.
+- **Clase con mayor dificultad:** Las clases intermedias (del 2 al 7), ya que al tratarse de reseñas con balances mixtos o matices moderados, el modelo tiende a fallar y a colapsar o sesgar las predicciones hacia los extremos de la escala ante la presencia de palabras de polaridad alta.
+- **Tipo de error más frecuente:** Sobreestimación o subestimación por saturación de palabras clave aisladas (ej. términos de felicidad, éxito o dolor extremo), ignorando negaciones, estados temporales e ironías.
+- **Impacto en el contexto:** El modelo no puede ser utilizado de forma automatizada para decisiones clínicas o farmacológicas críticas, ya que carece de pragmática para evaluar el balance real entre eficacia y efectos secundarios graves.
+- **Limitación del dataset:** Desbalance de clases hacia los extremos y dependencia estricta de bolsas de palabras, lo que provoca alucinaciones numéricas ante entradas fuera del dominio (como textos de deportes).
+- **Decisión antes del despliegue:** Aislar la aplicación web mediante Streamlit con advertencias explícitas sobre el alcance del modelo, asegurando rutas relativas limpias y un empaquetado de dependencias portátil mediante `requirements-cloud.txt`.

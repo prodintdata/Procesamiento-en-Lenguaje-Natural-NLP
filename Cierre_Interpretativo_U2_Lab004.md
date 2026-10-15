@@ -1,0 +1,8 @@
+# Cierre Interpretativo - Laboratorio 04
+
+- **Resultado principal:** Se auditó con éxito un corpus farmacéutico de 215,063 registros y 7 columnas proveniente del UCI ML Drug Review Dataset (Kaggle), validando la integridad del esquema mediante scripts de Python y superando satisfactoriamente todas las pruebas del contrato de datos (`pytest`).
+- **Evidencia de calidad y procedencia:** Se verificó la ausencia absoluta de valores nulos en los campos críticos de texto (`review`) y variable objetivo (`rating`), respaldado por un hash SHA-256 y un diccionario de datos transparente y documentado en la ficha técnica.
+- **Riesgo o sesgo identificado:** Se detectó un sesgo natural de autoselección en las reseñas de los pacientes, con una concentración masiva hacia calificaciones extremas altas (puntuaciones de 10) y la presencia de registros duplicados basados en textos repetidos.
+- **Decisión de aprobación o rechazo:** APROBADO. El corpus seleccionado se alinea perfectamente con los objetivos analíticos y predictivos del dominio farmacéutico y las exigencias de los laboratorios de procesamiento de lenguaje natural.
+- **Limitación que debe comunicarse:** Las reseñas provienen exclusivamente de portales web en inglés con participación voluntaria, por lo que se excluyen poblaciones de habla hispana, pacientes sin acceso digital y contextos clínicos cerrados.
+- **Siguiente verificación:** Ejecución de las pruebas de integración y avance hacia el laboratorio de extracción de características y modelado con TF-IDF (LAB05).

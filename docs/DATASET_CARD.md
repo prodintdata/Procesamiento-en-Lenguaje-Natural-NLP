@@ -40,3 +40,6 @@ Los datos fueron descargados directamente desde el repositorio público de Kaggl
 ## Riesgos, sesgos y usos prohibidos
 - **Sesgos previsibles:** Sesgo de autoselección (los usuarios con experiencias extremas, muy positivas o muy negativas, tienden a escribir más) y sesgo idiomático/cultural.
 - **Uso prohibido:** Este modelo y corpus **están estrictamente prohibidos** para su uso en diagnósticos clínicos automatizados, recomendaciones de recetas médicas a pacientes reales o toma de decisiones regulatorias de aprobación farmacéutica sin supervisión experta.
+
+
+
